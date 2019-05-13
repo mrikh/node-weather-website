@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--relative path with root from public folder as public was set as root in app.js when setting static-->
+    <link rel="stylesheet" href="./css/styles.css" >
+    <link rel="icon" href="/img/image.jpg">
+    <title>404</title>
+</head>
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>
+            {{message}}
+        </p>
+    </div>
+    {{>footer}}
+</body>
+</html>

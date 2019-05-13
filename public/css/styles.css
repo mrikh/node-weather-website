@@ -1,0 +1,64 @@
+body{
+    /* will set color for entire site */
+    color : #333333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    /* first vaule is top and bottom while second value is for right and left sides */
+    /* single value is applied everywhere */
+    padding: 0 16px;
+
+
+    display : flex;
+    /* by default flex box is by row so we set it to column */
+    flex-direction: column;
+    /*100 vh means 100% of viewport height and 50 vh would have meant 50% of view port height, middle of screen */
+    min-height : 100vh
+}
+
+.main-content{
+    /* Take over all left over space */
+    flex-grow: 1;
+}
+
+footer{
+    color : #888888;
+    border-top : 1px solid #eeeeee;
+    margin-top : 16px;
+    padding : 16px 0px
+}
+
+header{
+    margin-top: 16px;
+    margin-bottom : 48px
+}
+
+h1{
+    font-size: 64px;
+    margin-bottom: 16px
+}
+
+/* This allows us to target a tag inside header tag only instead of all a tags */
+header a{
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none
+}
+
+/* class selector instead of directly accessing tags */
+.portrait{
+    width: 250px;
+}
+
+input{
+    border : 1px solid #cccccc;
+    padding: 8px
+}
+
+button{
+    cursor: pointer;
+    border : 1px solid #888888;
+    background : #888888;
+    color: white;
+    padding: 8px;
+}

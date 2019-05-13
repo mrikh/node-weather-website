@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--relative path with root from public folder as public was set as root in app.js when setting static-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="/img/image.jpg">
+    <title>Weather</title>
+</head>
+<body>
+    <!-- anything not part of the footer will go in above div to ensure sticky header on bottom of the page -->
+    <div class="main-content">
+        {{>header}}
+        <p>Use this site to get your weather</p>
+
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+
+        <p id = "message-1"></p>
+        <p id = "message-2"></p>
+
+    </div>
+    {{>footer}}
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
